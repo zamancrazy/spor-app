@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+
+@theme {
+  --font-display: "Inter", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --color-neon: #D9FF00;
+  --color-dark: #0A0A0B;
+  --color-card: #1C1C1E;
+  --color-card-light: #2C2C2E;
+  --color-text-secondary: #8E8E93;
+  --color-accent-blue: #007AFF;
+}
+
+@layer base {
+  body {
+    @apply bg-dark text-white font-sans antialiased overflow-x-hidden;
+  }
+}
+
+.neon-glow {
+  box-shadow: 0 10px 30px rgba(217, 255, 0, 0.15);
+}
+
+.glass-panel {
+  @apply bg-white/5 border border-white/10 backdrop-blur-md;
+}
+
+.card-accent-left {
+  @apply border-l-4 border-neon;
+}
+
+.vibrant-gradient {
+  background: linear-gradient(135deg, #1C1C1E 0%, #2C2C2E 100%);
+}
